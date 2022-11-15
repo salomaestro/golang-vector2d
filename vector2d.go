@@ -101,7 +101,7 @@ func (vec Vector2d) Negate() Vector2d {
 }
 
 // Project a vector onto another vector.
-func (vec Vector2d) Project(vec2 Vector2d) Vector2d {
+func (vec Vector2d) ProjectOnto(vec2 Vector2d) Vector2d {
 	return vec2.Scale(vec.Dot(vec2) / vec2.Dot(vec2))
 }
 
